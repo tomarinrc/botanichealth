@@ -1,0 +1,40 @@
+@import "mixins";
+nav.navbar {
+  background: white;
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 1px solid $clouds;
+  .container {
+    padding: 1rem;
+    .navbar-row {
+      @include make-row();
+      .navbar-logo {
+        @include make-xs-column(4);
+        @include make-sm-column(3);
+        @include make-md-column(2);
+      }
+      .navbar-links {
+        @include make-xs-column(12);
+        @include make-sm-column(9);
+        @include make-md-column(10);
+        .navbar-links-top {
+          @include make-row();
+          .navbar-social {
+            @include make-xs-column(12);
+            @include make-sm-column(5);
+            @include make-md-column(3);
+            @include make-md-column-offset(5);
+          }
+          .navbar-search {
+            @include make-xs-column(12);
+            @include make-sm-column(7);
+            @include make-md-column(4);
+          }
+        }
+        .navbar-links-bottom {
+          @include make-row();
+        }
+      }
+    }
+  }
+}
