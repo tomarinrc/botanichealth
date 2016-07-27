@@ -21,4 +21,36 @@ aside.sidebar {
       }
     }
   }
+  ul.sidebar-azlinks {
+    margin: 2rem 0;
+    padding: 0 0 1rem;
+    list-style: none;
+    span.sidebar-azlinks-title {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    li.sidebar-azlinks-link {
+      padding: .5rem 0 .5rem;
+      text-transform: uppercase;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    ul.sidebar-azsubmenu {
+      margin: 0;
+      padding: 0 0 1rem 1rem;
+      list-style: none;
+      font-size: $font-size-small;
+      font-weight: 500;
+      display: none;
+      &:first-of-type {
+        display: block;
+      }
+      li.sidebar-azsubmenu-link {
+        padding: .5rem 0 .5rem;
+        text-transform: uppercase;
+      }
+    }
+  }
 }

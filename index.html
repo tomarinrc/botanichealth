@@ -10,7 +10,7 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="style.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic" rel="stylesheet" type="text/css">
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -76,9 +76,82 @@
       </div>
     </div>
   </nav>
-  <section class="hero">
+  <!--
+  ------------------------------------------
+  ----Hero Slider----------------------------
+  ----https://codyhouse.co/gem/hero-slider/--
+  ------------------------------------------
+  -->
+  <section class="cd-hero">
+    <ul class="cd-hero-slider autoplay">
+      <li class="selected">
+        <div class="cd-full-width">
+          <h2>Hero slider</h2>
+          <p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
+          <a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+        </div>
+        <!-- .cd-full-width -->
+      </li>
 
+      <li>
+        <div class="cd-half-width">
+          <h2>Slide title here</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+          <a href="#0" class="cd-btn">Start</a>
+          <a href="#0" class="cd-btn secondary">Learn More</a>
+        </div>
+        <!-- .cd-half-width -->
+
+        <div class="cd-half-width cd-img-container">
+          <img src="assets/tech-1.jpg" alt="tech 1">
+        </div>
+        <!-- .cd-half-width.cd-img-container -->
+      </li>
+
+      <li>
+        <div class="cd-half-width cd-img-container">
+          <img src="assets/tech-2.jpg" alt="tech 2">
+        </div>
+        <!-- .cd-half-width.cd-img-container -->
+
+        <div class="cd-half-width">
+          <h2>Slide title here</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+          <a href="#0" class="cd-btn">Start</a>
+          <a href="#0" class="cd-btn secondary">Learn More</a>
+        </div>
+        <!-- .cd-half-width -->
+
+      </li>
+    </ul>
+    <!-- .cd-hero-slider -->
+
+    <div class="cd-slider-nav">
+      <div class="container">
+        <div class="cd-slider-row">
+          <div class="cd-push-nav">
+            &nbsp;
+          </div>
+          <nav>
+            <span class="cd-marker item-1"></span>
+
+            <ul>
+              <li class="selected"><a href="#0">Intro</a></li>
+              <li><a href="#0">Tech 1</a></li>
+              <li><a href="#0">Tech 2</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- .cd-slider-nav -->
   </section>
+  <!-- .cd-hero -->
+  <!--
+  ------------------------------------------
+  ----End of Hero Slider----------------------
+  ------------------------------------------
+  -->
   <main>
     <div class="container">
       <div class="main-row">
@@ -103,15 +176,39 @@
             <li>Vitamins &amp; Supplements</li>
           </ul>
           <ul class="sidebar-azlinks">
-            <span>By Name</span>
-            <li>A-C</li>
-            <li>D-F</li>
-            <li>G-I</li>
-            <li>J-L</li>
-            <li>M-O</li>
-            <li>P-R</li>
-            <li>S-U</li>
-            <li>V-Z</li>
+            <span class="sidebar-azlinks-title">By Name</span>
+            <li class="sidebar-azlinks-link">A-C</li>
+            <ul class="sidebar-azsubmenu">
+              <li class="sidebar-azsubmenu-link">Apple Cider Vinegar with Green Tea</li>
+              <li class="sidebar-azsubmenu-link">Advanced Engergize Advantage</li>
+              <li class="sidebar-azsubmenu-link">Another Product</li>
+              <li class="sidebar-azsubmenu-link">Aaron Advanced Aeroputhtic Pills</li>
+            </ul>
+            <li class="sidebar-azlinks-link">D-F</li>
+            <ul class="sidebar-azsubmenu">
+              <li class="sidebar-azsubmenu-link">Apple Cider Vinegar with Green Tea</li>
+              <li class="sidebar-azsubmenu-link">Advanced Engergize Advantage</li>
+              <li class="sidebar-azsubmenu-link">Another Product</li>
+              <li class="sidebar-azsubmenu-link">Aaron Advanced Aeroputhtic Pills</li>
+            </ul>
+            <li class="sidebar-azlinks-link">G-I</li>
+            <ul class="sidebar-azsubmenu">
+              <li class="sidebar-azsubmenu-link">Apple Cider Vinegar with Green Tea</li>
+              <li class="sidebar-azsubmenu-link">Advanced Engergize Advantage</li>
+              <li class="sidebar-azsubmenu-link">Another Product</li>
+              <li class="sidebar-azsubmenu-link">Aaron Advanced Aeroputhtic Pills</li>
+            </ul>
+            <li class="sidebar-azlinks-link">J-L</li>
+            <ul class="sidebar-azsubmenu">
+              <li class="sidebar-azsubmenu-link">Apple Cider Vinegar with Green Tea</li>
+              <li class="sidebar-azsubmenu-link">Advanced Engergize Advantage</li>
+              <li class="sidebar-azsubmenu-link">Another Product</li>
+              <li class="sidebar-azsubmenu-link">Aaron Advanced Aeroputhtic Pills</li>
+            </ul>
+            <li class="sidebar-azlinks-link">M-O</li>
+            <li class="sidebar-azlinks-link">P-R</li>
+            <li class="sidebar-azlinks-link">S-U</li>
+            <li class="sidebar-azlinks-link">V-Z</li>
           </ul>
         </aside>
         <section class="content">
@@ -138,6 +235,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="assets/javascripts/bootstrap.js"></script>
   <script src="assets/javascripts/scripts.js"></script>
+  <script src="assets/javascripts/hero.js"></script>
 </body>
 
 </html>
