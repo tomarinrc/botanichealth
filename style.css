@@ -252,8 +252,8 @@ th {
     border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 .glyphicon {
   position: relative;
   top: 1px;
@@ -2449,13 +2449,8 @@ output {
   color: #555555;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+  border: none;
+  border-radius: 4px; }
   .form-control:focus {
     border-color: #66afe9;
     outline: 0;
@@ -5814,129 +5809,146 @@ nav.navbar {
   margin-bottom: 0;
   border: none;
   border-bottom: 1px solid #ecf0f1; }
-  nav.navbar .container {
-    padding: 1rem; }
-    nav.navbar .container .navbar-row {
-      margin-left: -15px;
-      margin-right: -15px; }
-      nav.navbar .container .navbar-row:before, nav.navbar .container .navbar-row:after {
-        content: " ";
-        display: table; }
-      nav.navbar .container .navbar-row:after {
-        clear: both; }
-      nav.navbar .container .navbar-row .navbar-logo {
-        position: relative;
-        float: left;
-        width: 33.33333%;
-        min-height: 1px;
-        padding-left: 15px;
-        padding-right: 15px;
-        position: relative;
-        min-height: 1px;
-        padding-left: 15px;
-        padding-right: 15px;
-        position: relative;
-        min-height: 1px;
-        padding-left: 15px;
-        padding-right: 15px; }
-        @media (min-width: 768px) {
-          nav.navbar .container .navbar-row .navbar-logo {
-            float: left;
-            width: 25%; } }
-        @media (min-width: 992px) {
-          nav.navbar .container .navbar-row .navbar-logo {
-            float: left;
-            width: 16.66667%; } }
-      nav.navbar .container .navbar-row .navbar-toggle {
-        border-color: black; }
-      nav.navbar .container .navbar-row .navbar-links {
-        position: relative;
-        float: left;
-        width: 100%;
-        min-height: 1px;
-        padding-left: 15px;
-        padding-right: 15px;
-        position: relative;
-        min-height: 1px;
-        padding-left: 15px;
-        padding-right: 15px;
-        position: relative;
-        min-height: 1px;
-        padding-left: 15px;
-        padding-right: 15px; }
-        @media (min-width: 768px) {
-          nav.navbar .container .navbar-row .navbar-links {
-            float: left;
-            width: 75%; } }
-        @media (min-width: 992px) {
-          nav.navbar .container .navbar-row .navbar-links {
-            float: left;
-            width: 83.33333%; } }
-        nav.navbar .container .navbar-row .navbar-links .navbar-links-top {
-          margin-left: -15px;
-          margin-right: -15px; }
-          nav.navbar .container .navbar-row .navbar-links .navbar-links-top:before, nav.navbar .container .navbar-row .navbar-links .navbar-links-top:after {
-            content: " ";
-            display: table; }
-          nav.navbar .container .navbar-row .navbar-links .navbar-links-top:after {
-            clear: both; }
-          nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-social {
-            position: relative;
-            float: left;
-            width: 100%;
-            min-height: 1px;
-            padding-left: 15px;
-            padding-right: 15px;
-            position: relative;
-            min-height: 1px;
-            padding-left: 15px;
-            padding-right: 15px;
-            position: relative;
-            min-height: 1px;
-            padding-left: 15px;
-            padding-right: 15px; }
-            @media (min-width: 768px) {
-              nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-social {
-                float: left;
-                width: 41.66667%; } }
-            @media (min-width: 992px) {
-              nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-social {
-                float: left;
-                width: 25%; } }
-            @media (min-width: 992px) {
-              nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-social {
-                margin-left: 41.66667%; } }
-          nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-search {
-            position: relative;
-            float: left;
-            width: 100%;
-            min-height: 1px;
-            padding-left: 15px;
-            padding-right: 15px;
-            position: relative;
-            min-height: 1px;
-            padding-left: 15px;
-            padding-right: 15px;
-            position: relative;
-            min-height: 1px;
-            padding-left: 15px;
-            padding-right: 15px; }
-            @media (min-width: 768px) {
-              nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-search {
-                float: left;
-                width: 58.33333%; } }
-            @media (min-width: 992px) {
-              nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-search {
-                float: left;
-                width: 33.33333%; } }
-        nav.navbar .container .navbar-row .navbar-links .navbar-links-bottom {
-          margin-left: -15px;
-          margin-right: -15px; }
-          nav.navbar .container .navbar-row .navbar-links .navbar-links-bottom:before, nav.navbar .container .navbar-row .navbar-links .navbar-links-bottom:after {
-            content: " ";
-            display: table; }
-          nav.navbar .container .navbar-row .navbar-links .navbar-links-bottom:after {
-            clear: both; }
+  nav.navbar .container .navbar-row {
+    margin-left: -15px;
+    margin-right: -15px; }
+    nav.navbar .container .navbar-row:before, nav.navbar .container .navbar-row:after {
+      content: " ";
+      display: table; }
+    nav.navbar .container .navbar-row:after {
+      clear: both; }
+    nav.navbar .container .navbar-row .navbar-logo {
+      position: relative;
+      float: left;
+      width: 33.33333%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding: 1.5rem 0 0; }
+      @media (min-width: 768px) {
+        nav.navbar .container .navbar-row .navbar-logo {
+          float: left;
+          width: 25%; } }
+      @media (min-width: 992px) {
+        nav.navbar .container .navbar-row .navbar-logo {
+          float: left;
+          width: 16.66667%; } }
+    nav.navbar .container .navbar-row .navbar-toggle {
+      border-color: black; }
+    nav.navbar .container .navbar-row .navbar-links {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 768px) {
+        nav.navbar .container .navbar-row .navbar-links {
+          float: left;
+          width: 75%; } }
+      @media (min-width: 992px) {
+        nav.navbar .container .navbar-row .navbar-links {
+          float: left;
+          width: 75%; } }
+      @media (min-width: 992px) {
+        nav.navbar .container .navbar-row .navbar-links {
+          margin-left: 8.33333%; } }
+      nav.navbar .container .navbar-row .navbar-links .navbar-links-top {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 1rem 0; }
+        nav.navbar .container .navbar-row .navbar-links .navbar-links-top:before, nav.navbar .container .navbar-row .navbar-links .navbar-links-top:after {
+          content: " ";
+          display: table; }
+        nav.navbar .container .navbar-row .navbar-links .navbar-links-top:after {
+          clear: both; }
+        nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-social {
+          position: relative;
+          float: left;
+          width: 100%;
+          min-height: 1px;
+          padding-left: 15px;
+          padding-right: 15px;
+          position: relative;
+          min-height: 1px;
+          padding-left: 15px;
+          padding-right: 15px;
+          position: relative;
+          min-height: 1px;
+          padding-left: 15px;
+          padding-right: 15px;
+          height: 38px; }
+          @media (min-width: 768px) {
+            nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-social {
+              float: left;
+              width: 41.66667%; } }
+          @media (min-width: 992px) {
+            nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-social {
+              float: left;
+              width: 25%; } }
+          @media (min-width: 992px) {
+            nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-social {
+              margin-left: 41.66667%; } }
+        nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-search {
+          position: relative;
+          float: left;
+          width: 100%;
+          min-height: 1px;
+          padding-left: 15px;
+          padding-right: 15px;
+          position: relative;
+          min-height: 1px;
+          padding-left: 15px;
+          padding-right: 15px;
+          position: relative;
+          min-height: 1px;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-right: 0; }
+          @media (min-width: 768px) {
+            nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-search {
+              float: left;
+              width: 58.33333%; } }
+          @media (min-width: 992px) {
+            nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-search {
+              float: left;
+              width: 33.33333%; } }
+          nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-search .navbar-form {
+            padding-right: 0; }
+            nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-search .navbar-form .input-group {
+              border: 1px solid #ccc;
+              border-radius: 4px; }
+              nav.navbar .container .navbar-row .navbar-links .navbar-links-top .navbar-search .navbar-form .input-group button {
+                background: none; }
+      nav.navbar .container .navbar-row .navbar-links .navbar-links-bottom {
+        margin-left: -15px;
+        margin-right: -15px;
+        border-top: 2px solid #95a5a6; }
+        nav.navbar .container .navbar-row .navbar-links .navbar-links-bottom:before, nav.navbar .container .navbar-row .navbar-links .navbar-links-bottom:after {
+          content: " ";
+          display: table; }
+        nav.navbar .container .navbar-row .navbar-links .navbar-links-bottom:after {
+          clear: both; }
+        nav.navbar .container .navbar-row .navbar-links .navbar-links-bottom li a {
+          font-weight: 500;
+          color: #2c3e50;
+          padding: 1.5rem 2rem; }
 
 /* --------------------------------
 
